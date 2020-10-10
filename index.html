@@ -5,32 +5,51 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
+  
+
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barcode Converter</title>
 </head>
 <body>
 
-<h1>BCMA to Elite Barcode Converter:</h1>
-<h2>Convert</h2>
- <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Select
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">ELITE</a>
-      <a class="dropdown-item" href="#">BCMA</a>
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">BCMA to Elite Barcode Converter</a>
+  </nav>
+
+  <div class="container-fluid">
+    <h2>Convert:
+    </h2>
+
+    <div class="col-12">
+
+      <div class="col-6">
+
+     <input class="form-control form-control-lg" type="text" placeholder="Scanned Barcode Here"></input>
+     <button type="button" class="btn btn-primary">Convert</button>
+     <button type="button" class="btn btn-danger">Delete</button>
+   
+   
     </div>
+
+
   </div>
-  to 
-  <h2>(placer text Either Elite or BCMA)</h2>
+  <h2>Output</h2>
+  <div class="col-12">
+    <div class="col-6">
+
+  <!-- The text field -->
+<input class="form-control form-control-lg" type="text" value="Hello World" id="myInput">
+
+<!-- The button used to copy the text -->
+<button  type="button" class="btn btn-secondary" onclick="myFunction()">Copy text</button>
+</div>
+</div>
 
 
-  <input class="form-control form-control-lg" type="text" placeholder="Scanned Barcode Here">
-  <button type="button" class="btn btn-primary">Convert</button>
-  <button type="button" class="btn btn-danger">Delete</button>
 
-  <h2>Real output</h2>
-
+</div>
+  
 </body>
 </html>
