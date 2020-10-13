@@ -1,4 +1,4 @@
-  function submit ( ) {
+function submit ( ) {
     event.preventDefault();
     username = $("#username").val().trim();
     projectname = $("#projectname").val().trim();
@@ -18,3 +18,8 @@ function clear ( ) {
     event.preventDefault();
     $( "#results" ).empty();
 }
+
+
+$(document).on("click", "#submit", submit);
+
+$(document).on("click", "#clear", clear);
