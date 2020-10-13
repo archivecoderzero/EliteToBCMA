@@ -6,12 +6,8 @@ function submit ( ) {
     var n = barcode.includes("]")
 
     if(n){
-        ner = barcode.slice(0,3);
-
+        ner = barcode.slice(6,99);
     var the =  ner ;
-    linkable.addClass("links")
-    linkable.attr("href", the);
-    linkable.attr("target","_blank")
     linkable.append(the)
     $("#results").append(resultDiv);
     resultDiv.append(linkable);
