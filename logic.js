@@ -1,15 +1,21 @@
 function submit ( ) {
     event.preventDefault();
-    username = $("#username").val().trim();
-    var resultDiv = $("<li>");
-    var linkable = $("<a>");
-    var the = "https://" + username + ".github.io/" ;
+    barcode = $("#barcode").val().trim();
+    let resultDiv = $("<li>");
+    let linkable = $("h5");
+    var n = barcode.includes("]")
+
+    if(n){
+        ner = barcode.slice(0,3);
+
+    var the =  ner ;
     linkable.addClass("links")
     linkable.attr("href", the);
     linkable.attr("target","_blank")
     linkable.append(the)
     $("#results").append(resultDiv);
     resultDiv.append(linkable);
+}
 }
 
 function clear ( ) {
