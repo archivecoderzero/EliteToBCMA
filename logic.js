@@ -1,19 +1,23 @@
 function submit() {
     event.preventDefault();
     barcode = $("#barcode").val().trim();
-    let resultDiv = $("<li>");
+    let resultDiv = $("h5");
     let linkable = $("h5");
     var n = barcode.includes("]C1")
+    let convertedBc = barcode.slice(3, 99);
+
+    
     if (n) {
-        ner = barcode.slice(3, 99);
-        linkable.append(ner)
+        linkable.append(convertedBc)
         $("#results").append(resultDiv);
         resultDiv.append(linkable);
+
     }
     else{
         linkable.append("Not a Valid Barcode")
         $("#results").append(resultDiv);
         resultDiv.append(linkable);
+
     }
 }
 

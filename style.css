@@ -23,9 +23,3 @@
 }
 
 
-
-.links:hover {
-    color: blue;
-    border: yellow 3px solid;
-    transition: .5s ease;
-}
